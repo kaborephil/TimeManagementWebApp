@@ -31,3 +31,8 @@ C:\Users\Administrator\Desktop\Source\ToDoTaskApp\ToDoTaskApp\obj\Debug\netcorea
 C:\Users\Administrator\Desktop\Source\ToDoTaskApp\ToDoTaskApp\obj\Debug\netcoreapp2.1\ToDoTaskApp.dll
 C:\Users\Administrator\Desktop\Source\ToDoTaskApp\ToDoTaskApp\obj\Debug\netcoreapp2.1\ToDoTaskApp.pdb
 C:\Users\Administrator\Desktop\Source\ToDoTaskApp\ToDoTaskApp\obj\Debug\netcoreapp2.1\ToDoTaskApp.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Source\ToDoTaskApp\ToDoTaskApp\obj\Debug\netcoreapp2.1\Razor\Views\Tasks\Create.g.cshtml.cs
+C:\Users\Administrator\Desktop\Source\ToDoTaskApp\ToDoTaskApp\obj\Debug\netcoreapp2.1\Razor\Views\Tasks\Delete.g.cshtml.cs
+C:\Users\Administrator\Desktop\Source\ToDoTaskApp\ToDoTaskApp\obj\Debug\netcoreapp2.1\Razor\Views\Tasks\Details.g.cshtml.cs
+C:\Users\Administrator\Desktop\Source\ToDoTaskApp\ToDoTaskApp\obj\Debug\netcoreapp2.1\Razor\Views\Tasks\Edit.g.cshtml.cs
+C:\Users\Administrator\Desktop\Source\ToDoTaskApp\ToDoTaskApp\obj\Debug\netcoreapp2.1\Razor\Views\Tasks\Index.g.cshtml.cs
