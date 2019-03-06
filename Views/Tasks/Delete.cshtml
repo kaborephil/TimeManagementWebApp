@@ -4,33 +4,31 @@
     ViewData["Title"] = "Delete";
 }
 
-<h2>Delete</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h1 class="text-danger">Delete this task?</h1>
 <div>
-    <h4>Task</h4>
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal container" style="margin-left:25%;">
         <dt>
-            @Html.DisplayNameFor(model => model.TaskTitle)
+           Task Title
         </dt>
         <dd>
             @Html.DisplayFor(model => model.TaskTitle)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.TaskComment)
+            Task Comment
         </dt>
         <dd>
             @Html.DisplayFor(model => model.TaskComment)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.TaskDate)
+           Task Date
         </dt>
         <dd>
             @Html.DisplayFor(model => model.TaskDate)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.TaskStatus)
+           Task Status
         </dt>
         <dd>
             @Html.DisplayFor(model => model.TaskStatus)
@@ -39,7 +37,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="TaskId" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Delete" class="btn btn-lg btn-danger" /> |
+        <a asp-action="Index">Back to Task List</a>
     </form>
 </div>
