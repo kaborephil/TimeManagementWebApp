@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h1 class="text-success">To Do Task List</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,16 +13,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.TaskTitle)
+                Task Title
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TaskComment)
+               Task Comment
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TaskDate)
+               Task Date
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TaskStatus)
+                Task Status
             </th>
             <th></th>
         </tr>
