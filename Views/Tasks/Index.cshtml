@@ -31,16 +31,58 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.TaskTitle)
+                @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
+                {
+
+                    <strike class="text-danger">@Html.DisplayFor(modelItem => item.TaskTitle) </strike>
+
+                }
+                else
+                {
+
+                    @Html.DisplayFor(modelItem => item.TaskTitle)
+                }
+
+
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TaskComment)
+                @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
+                {
+
+                    <strike class="text-danger">@Html.DisplayFor(modelItem => item.TaskComment) </strike>
+
+                }
+                else
+                {
+
+                    @Html.DisplayFor(modelItem => item.TaskComment)
+                }
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TaskDate)
+                @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
+                {
+
+                    <strike class="text-danger">@Html.DisplayFor(modelItem => item.TaskDate) </strike>
+
+                }
+                else
+                {
+
+                    @Html.DisplayFor(modelItem => item.TaskDate)
+                }
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TaskStatus)
+                @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
+                {
+
+                    <strike class="text-danger">@Html.DisplayFor(modelItem => item.TaskStatus) </strike>
+
+                }
+                else
+                {
+
+                    @Html.DisplayFor(modelItem => item.TaskStatus)
+                }
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.TaskId">Edit</a> |
