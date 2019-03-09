@@ -85,9 +85,8 @@
                 }
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.TaskId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TaskId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TaskId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.TaskId"><span class="text-info">Update</span></a><br /> 
+                <a asp-action="Delete" asp-route-id="@item.TaskId"><span class="text-danger">Remove</span></a>
             </td>
         </tr>
 }
