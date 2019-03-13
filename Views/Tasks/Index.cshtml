@@ -1,10 +1,16 @@
-﻿@model IEnumerable<ToDoTaskApp.Models.Task>
+﻿@model ReflectionIT.Mvc.Paging.PagingList<ToDoTaskApp.Models.Task>
+@using ReflectionIT.Mvc.Paging
+@addTagHelper *, Reflection.Mvc.Paging
 
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1 class="text-success">To Do Task List</h1>
+
+<nav aria-label="Task Paging">
+    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
+</nav>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -16,10 +22,10 @@
                 Task Title
             </th>
             <th class="text-center text-primary">
-               Task Comment
+                Task Comment
             </th>
             <th class="text-center text-primary">
-               Task Date
+                Task Date
             </th>
             <th class="text-center text-primary">
                 Task Status
@@ -30,67 +36,70 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
-                {
+        @foreach (var item in Model)
+        {
+            <tr>
 
-                    <strike class="text-danger">@Html.DisplayFor(modelItem => item.TaskTitle) </strike>
+                <td>
+                    @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
+                    {
+                        <strike class="text-danger"> @Html.DisplayFor(modelItem => item.TaskTitle) </strike>
 
-                }
-                else
-                {
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(modelItem => item.TaskTitle)
+                    }
+                </td>
+                <td>
+                    @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
+                    {
+                        <strike class="text-danger"> @Html.DisplayFor(modelItem => item.TaskComment) </strike>
 
-                    @Html.DisplayFor(modelItem => item.TaskTitle)
-                }
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(modelItem => item.TaskComment)
+                    }
+                </td>
+                <td>
+                    @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
+                    {
+                        <strike class="text-danger"> @Html.DisplayFor(modelItem => item.TaskDate) </strike>
 
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(modelItem => item.TaskDate)
+                    }
+                </td>
+                <td>
+                    @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
+                    {
+                        <strike class="text-danger"> @Html.DisplayFor(modelItem => item.TaskStatus) </strike>
 
-            </td>
-            <td>
-                @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
-                {
+                    }
+                    else
+                    {
 
-                    <strike class="text-danger">@Html.DisplayFor(modelItem => item.TaskComment) </strike>
+                        @Html.DisplayFor(modelItem => item.TaskStatus)
+                    }
+                </td>
 
-                }
-                else
-                {
+                <td>
 
-                    @Html.DisplayFor(modelItem => item.TaskComment)
-                }
-            </td>
-            <td>
-                @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
-                {
+                    <a asp-action="Edit" asp-route-id="@item.TaskId"><span class="text-success">Update</span></a> <br />
+                    <a asp-action="Delete" asp-route-id="@item.TaskId"><span class="text-danger">Remove</span></a>
 
-                    <strike class="text-danger">@Html.DisplayFor(modelItem => item.TaskDate) </strike>
+                </td>
 
-                }
-                else
-                {
+            </tr>
 
-                    @Html.DisplayFor(modelItem => item.TaskDate)
-                }
-            </td>
-            <td>
-                @if ((item.TaskStatus == "done") || (item.TaskStatus == "Done") || (item.TaskStatus == "DONE"))
-                {
-
-                    <strike class="text-danger">@Html.DisplayFor(modelItem => item.TaskStatus) </strike>
-
-                }
-                else
-                {
-
-                    @Html.DisplayFor(modelItem => item.TaskStatus)
-                }
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.TaskId"><span class="text-success">Update</span></a><br /> 
-                <a asp-action="Delete" asp-route-id="@item.TaskId"><span class="text-danger">Remove</span></a>
-            </td>
-        </tr>
-}
+        }
     </tbody>
 </table>
+
+
+<nav aria-label="Task Paging">
+    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
+</nav>

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using ReflectionIT.Mvc.Paging;
 using ToDoTaskApp.Models;
 using Task = ToDoTaskApp.Models.Task;
 
@@ -19,11 +20,15 @@ namespace ToDoTaskApp.Controllers
             _context = context;
         }
 
+
         // GET: Tasks
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-            return View(await _context.Task.ToListAsync());
+            var query = _context.Task.AsNoTracking().OrderBy(id => id.TaskId);
+            var model = await PagingList.CreateAsync(query, 6, page);
+            return View(model);
         }
+
 
         // GET: Tasks/Details/5
         public async Task<IActionResult> Details(int? id)

@@ -13,6 +13,7 @@ using ToDoTaskApp.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ToDoTaskApp.Models;
+using ReflectionIT.Mvc.Paging;
 
 namespace ToDoTaskApp
 {
@@ -42,6 +43,7 @@ namespace ToDoTaskApp
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddPaging();
 
             services.AddDbContext<ToDoTaskAppContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("ToDoTaskAppContext")));

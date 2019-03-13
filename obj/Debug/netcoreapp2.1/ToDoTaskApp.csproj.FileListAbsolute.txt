@@ -73,3 +73,4 @@ C:\Users\kabor\Desktop\Projects\ToDoTaskApp\obj\Debug\netcoreapp2.1\ToDoTaskApp.
 C:\Users\kabor\Desktop\Projects\ToDoTaskApp\obj\Debug\netcoreapp2.1\ToDoTaskApp.dll
 C:\Users\kabor\Desktop\Projects\ToDoTaskApp\obj\Debug\netcoreapp2.1\ToDoTaskApp.pdb
 C:\Users\kabor\Desktop\Projects\ToDoTaskApp\obj\Debug\netcoreapp2.1\ToDoTaskApp.csproj.CopyComplete
+C:\Users\kabor\Desktop\Projects\ToDoTaskApp\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
