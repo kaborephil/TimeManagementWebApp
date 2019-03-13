@@ -1,11 +1,8 @@
 ﻿@model ToDoTaskApp.Models.Task
-
 @{
     ViewData["Title"] = "Create";
 }
-
 <h1 class="text-success">Enter to do task and click create button to store in the database</h1>
-
 
 <hr />
 <div class="row container" style="margin-left:25%">
@@ -29,7 +26,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="TaskStatus" class="control-label">Task Status</label>
-                <input asp-for="TaskStatus" class="form-control" />
+                <select asp-for="TaskStatus" class="form-control">
+                    <option>To Do</option>
+                    <option> In Progress</option>
+                    <option> Done</option>
+                </select>
                 <span asp-validation-for="TaskStatus" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -38,11 +39,9 @@
         </form>
     </div>
 </div>
-
 <div>
     <a asp-action="Index">Back to Task List</a>
 </div>
-
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

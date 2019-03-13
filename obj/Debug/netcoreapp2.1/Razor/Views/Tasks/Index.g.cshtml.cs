@@ -80,7 +80,7 @@ Write(await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
             WriteLiteral("\r\n</nav>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(366, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b61bd7952bd41ee9d806196737138e1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "35a5c5d22d354d58b22200b4bfecaec8", async() => {
                 BeginContext(389, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -311,7 +311,7 @@ Write(await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
             WriteLiteral("                </td>\r\n\r\n                <td>\r\n\r\n                    ");
             EndContext();
             BeginContext(3015, 93, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d4b931c6d6541a6a12d3716a7af6f32", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e102506b050409aa1303a50b2ab4370", async() => {
                 BeginContext(3064, 40, true);
                 WriteLiteral("<span class=\"text-success\">Update</span>");
                 EndContext();
@@ -346,7 +346,7 @@ Write(await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
             WriteLiteral(" <br />\r\n                    ");
             EndContext();
             BeginContext(3137, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d59d62ea6ea476686eef66da72df1a9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2990e7fca7aa4080932501f1898dd941", async() => {
                 BeginContext(3188, 39, true);
                 WriteLiteral("<span class=\"text-danger\">Remove</span>");
                 EndContext();
