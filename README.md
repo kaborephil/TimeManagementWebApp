@@ -1,4 +1,4 @@
-# ToDoTaskApp
+# Time Management Web App
 
 ## This is a time management ASP.NET MVC CORE Web application.
 
