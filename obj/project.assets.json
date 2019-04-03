@@ -12568,11 +12568,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kabor\\Desktop\\Projects\\ToDoTaskApp\\ToDoTaskApp.csproj",
+      "projectUniqueName": "C:\\Users\\kabor\\Desktop\\TimeManagement\\TimeManagementWebApp\\ToDoTaskApp.csproj",
       "projectName": "ToDoTaskApp",
-      "projectPath": "C:\\Users\\kabor\\Desktop\\Projects\\ToDoTaskApp\\ToDoTaskApp.csproj",
+      "projectPath": "C:\\Users\\kabor\\Desktop\\TimeManagement\\TimeManagementWebApp\\ToDoTaskApp.csproj",
       "packagesPath": "C:\\Users\\kabor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kabor\\Desktop\\Projects\\ToDoTaskApp\\obj\\",
+      "outputPath": "C:\\Users\\kabor\\Desktop\\TimeManagement\\TimeManagementWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

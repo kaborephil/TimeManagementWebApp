@@ -29,6 +29,6 @@
 # User Interface look and feel!
 
 
-![](Images/ToDoTaskList.png)
+![](Images/ToDoListDemo2.gif)
 
-![](Images/ToDoTask2.gif)
+![](Images/ToDoListDemo.gif)
